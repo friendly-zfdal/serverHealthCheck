@@ -1,21 +1,21 @@
-# GLPi Example Plugin
+# ServerHealthCheck plugin for GLPI
 
 ## Introduction
 
-This plugin implements a few basic glpi hooks.
-Most of implemented features stands for example and are not
-expected to provide fantastic functionality other than teaching.
+This plugin, when using the ipmitool library, queries the organization's servers using
+the sdr command and draws a conclusion about their current state. The data collected
+in the plugin table can be presented in three types: public/private reports and widget on the GLPI dashboard.
 
 ## Documentation
 
-This plugin is documented [here](https://github.com/pluginsGLPI/glpi-example-plugin/wiki),
-It is the developer documentation for plugin contributors as of now.
-You may change that link and provide documentation for your plugin,
-if you totally create your plugin repository from the worktree of this one.
+There are three types of documentation which are available [here] (https://github.com/friendly-zfdal/serverHealthCheck/blob/main/Docs)
+on two languages (Russian and English):
+1) Source Code documentation;
+2) Usage guide for administrator;
+3) Usage guide for user.
 
 ## Installation
 
 ```sh
 cd /my/glpi/deployment/main/directory/plugins
-git clone git@github.com:pluginsGLPI/glpi-example-plugin.git example
-```
+git clone https://github.com/friendly-zfdal/serverHealthCheck.git serverhealthcheck
